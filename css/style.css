@@ -9,8 +9,12 @@ td{
 /* hover */
 a:hover{
     color: rgb(252, 166, 166);
+  
+   text-shadow: 1px 1px 10px rgb(211, 210, 210);
+
+
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: rgb(80, 174, 218);
 }
