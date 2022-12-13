@@ -1,0 +1,16 @@
+table{
+    border: 1px solid #000;
+    width: 100%;
+    text-align: center;
+}
+td{
+    border: 1px solid #000;
+}
+/* hover */
+a:hover{
+    color: rgb(252, 166, 166);
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
