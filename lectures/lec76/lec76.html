@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/table.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 76</title>
+</head>
+<body>
+    <h1>JavaScript Array Methods</h1>
+
+    <p>Sorting is done using the sort() method. The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.</p>
+
+    <h2>Numeric Sort</h2>
+
+    <p>To sort numbers in ascending order, just pass in the compare function:</p>
+    <mark><code>sort(function(a,b){return a-b})</code></mark>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Simple Array Without Sort</th>
+            <td id="arr"></td>
+        </tr>
+        <tr>
+            <th>With Sort + compair(ascending) </th>
+            <td id="asorted"></td>
+        </tr>
+        <tr>
+            <th>With Sort + compair(descending) </th>
+            <td id="dsorted"></td>
+        </tr>
+    </table>
+
+    <h2>Arary concatenate</h2>
+
+    <p>concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.</p>
+    
+    <table>
+        <tr>
+            <th>First Array</th>
+            <th>+</th>
+            <th>Second array</th>
+            <th>=</th>
+            <th>concatenated</th>
+        </tr>
+        <tr>
+            <td id="first"></td>
+            <td></td>
+            <td id="second"></td>
+            <td></td>
+            <td id="conc"></td>
+        </tr>
+    </table>
+    <h2>Slice</h2>
+    <p>The slice() method returns the selected elements in an array, as a new array object.</p>
+
+    <table>
+        <tr>
+            <th>Simple Array</th>
+            <td id="withoutSlice"></td>
+        </tr>
+        <tr>
+            <th>slicing Array (1,4)</th>
+            <td id="slice"></td>
+        </tr>
+    </table>
+<script src="lec76.js"></script>
+</body>
+</html>
