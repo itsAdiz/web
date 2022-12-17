@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../css/table.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 78</title>
+</head>
+<body>
+    <h1>JavaScript Conditions</h1>
+ 
+    <p>JavaScript conditions are used to perform different actions based on different conditions.</p>
+    <p>JavaScript supports the following conditional statements:</p>
+    <ul>
+        <li>if statement</li>
+        <li>if...else statement</li>
+        <li>if...else if...else statement</li>
+        <li>switch statement</li>
+    </ul>
+    <h2>JavaScript if else Statement</h2>
+    <p>The if statement executes a statement if a specified condition is true. If the condition is false, another statement/else can be executed.</p>
+    <pre style="white-space: pre-wrap;">
+        <code>
+            if (condition) {
+                // code to be executed if condition is true
+            }
+            else{
+                // code to be executed if condition is false
+            }
+        </code>
+    </pre>
+    <!-- If else table example -->
+    <table>
+        <tr>
+            <th id="condition"></th>
+            <th>Result</th>
+        </tr>
+        <tr>
+           <td>
+            <!-- using oninput  -->
+            <!-- oninput event is fired when the value of an element has been changed. -->
+            <input type="number"id="userInput" oninput="listenToInput()" placeholder="Enter A Number To Test if-else Condition" style="width: 100%; box-sizing: border-box;">
+           </td>
+           <td id="result"></td>
+        </tr>
+    </table>
+    <!-- if  else if  else -->
+    <h2>JavaScript else if Statement</h2>
+    <p>The else if statement allows you to specify a new condition if the first condition is false.</p>
+    <pre style="white-space: pre-wrap;">
+        <code>
+            if (condition1) {
+                // code to be executed if condition1 is true
+            }
+            else if (condition2) {
+                // code to be executed if the condition1 is false and condition2 is true
+            }
+            else{
+                // code to be executed if condition1 and condition2 are false
+            }
+        </code>
+    </pre>
+   
+    <table>
+        <tr>
+            <th>Type Grade To Test else if </th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="userInput2" oninput="listenToInput2()" style="width: 100%; box-sizing:border-box;">
+            </td>
+            <td id="result2"></td>
+        </tr>
+    </table>
+   
+    <script src="lec78.js"></script>
+</body>
+</html>
