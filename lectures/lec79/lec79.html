@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 79</title>
+</head>
+<body>
+    <h1> Switch Statements in JavaScript</h1>
+    <h2>Switch Statements</h2>
+    <p>Switch statements are used to perform different actions based on different conditions.</p>
+    <pre style="white-space: pre-wrap;">
+        <code>
+            switch(expression){
+                case: n:
+                    // code block
+                    break;
+                case: n:
+                    // code block
+                    break;
+                default:
+                    // code block
+            }
+        </code>
+    </pre>
+    <!-- break defination-->
+    <h3>Break</h3>
+    <p>Break is used to stop the execution of the code block. If break is not used, the code will continue to execute.</p>
+    <h3>default</h3>
+    <p>Default is used to execute a block of code if no case matches the expression.</p>
+    <h3>fall-through</h3>
+    <p>Using multiple cases in a switch statement is sometimes called "fall-through" or "case fall-through."</p>
+    <pre style="white-space:pre-wrap;">
+        <code>
+            switch(expression){
+                case: n:
+                case: n:
+                case: n:
+                    // code block
+                    break;
+                case: n:
+                    // code block
+                    break;
+                default:
+                    // code block
+                    
+            }
+        </code>
+    </pre>
+    <h3>Switch Example</h3>
+    <div>
+        <p>Today : <span id="result"></span></p>
+    </div>
+    <script src="lec79.js"></script>
+</body>
+</html>
